@@ -28,7 +28,7 @@ function App() {
   const {on, getTogglerProps} = useToggle()
   return (
     <div>
-      <Switch on={on} {...getTogglerProps({on})} />
+      <Switch {...getTogglerProps({on})} />
       <hr />
       <button
         {...getTogglerProps({
